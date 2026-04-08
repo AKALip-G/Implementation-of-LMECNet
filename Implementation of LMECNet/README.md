@@ -30,3 +30,25 @@ This repository releases the main method components of LMECNet rather than the f
 │   ├── targets/
 │   └── outputs/
 └── README.md
+```
+
+## Main Components
+
+- `modules/gating.py`
+  Adaptive gating unit used for directional feature fusion.
+- `modules/sequence_utils.py`
+  Utilities for converting 2D feature maps into row-wise and column-wise token sequences.
+- `modules/spectral_utils.py`
+  Utilities for FFT/iFFT, paired real/imag channel conversion, radial band masking, and spectral reassembly.
+- `modules/smccu.py`
+  Implementation of the **Sequential Mamba-CNN Coupling Unit (SMCCU)**.
+- `modules/bfmfb.py`
+  Implementation of the **Bidirectional Frequency-Enhanced Mamba Fusion Block (BFMFB)**.
+- `losses/tad_loss.py`
+  Implementation of the finalized **Twin-Artifact Discrimination (TAD) loss**.
+- `examples/inputs/`, `examples/targets/`, `examples/outputs/`
+  Placeholder directories for example inputs, reference targets, and reconstructed outputs.
+
+## Notes
+
+- This repository focuses on the **core modules** of the method.
